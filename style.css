@@ -29,7 +29,7 @@ body.dark-mode {
 
 .dark-mode .btn {
     box-shadow: 0 4px 6px rgba(255,255,255,0.1);
-    color: #ddd; /* Corrigindo a cor das frases dos botões no modo escuro */
+    color: #ddd;
 }
 
 .dark-mode .btn:hover {
@@ -45,11 +45,11 @@ body.dark-mode {
 }
 
 .dark-mode .economize {
-    background-color: #455a64; /* Cor uniforme para os botões no modo escuro */
+    background-color: #455a64;
 }
 
 .dark-mode .economize:hover {
-    background-color: #546e7a; /* Cor uniforme para o hover dos botões no modo escuro */
+    background-color: #546e7a;
 }
 
 .dark-mode .whatsapp {
@@ -60,7 +60,6 @@ body.dark-mode {
     background-color: #43a047;
 }
 
-/* Estilos para as partículas */
 .particle {
     position: absolute;
     border-radius: 50%;
@@ -79,9 +78,8 @@ body.dark-mode {
     }
 }
 
-/* Ajuste para as partículas no modo claro */
 .particle {
-    background-color: rgba(163, 213, 247, 0.6); /* Aumenta a opacidade */
+    background-color: rgba(163, 213, 247, 0.6);
 }
 
 .container {
@@ -146,7 +144,6 @@ p {
     box-shadow: 0 6px 8px rgba(0,0,0,0.15);
 }
 
-/* Efeito de brilho nos botões */
 .btn::before {
     content: '';
     position: absolute;
@@ -173,12 +170,12 @@ p {
 }
 
 .economize {
-    background-color: #cceeff; /* Cor uniforme para os botões no modo claro */
+    background-color: #cceeff;
     color: #003366;
 }
 
 .economize:hover {
-    background-color: #b3e6ff; /* Cor uniforme para o hover dos botões no modo claro */
+    background-color: #b3e6ff;
 }
 
 .whatsapp {
@@ -194,7 +191,6 @@ p {
     margin-right: 8px;
 }
 
-/* Estilos para o botão de tema */
 #theme-toggle {
     position: absolute;
     top: 20px;
@@ -220,8 +216,33 @@ p {
     color: #e0a800;
 }
 
-/* Corrigindo a cor dos links visitados no modo escuro */
 .dark-mode .btn:link,
 .dark-mode .btn:visited {
     color: #ddd;
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 15px;
+    }
 }
