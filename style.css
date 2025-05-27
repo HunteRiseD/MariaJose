@@ -8,8 +8,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
     transition: background 0.3s, color 0.3s;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
 }
 
 body.dark-mode {
@@ -91,6 +91,8 @@ body.dark-mode {
     text-align: center;
     z-index: 1;
     transition: background 0.3s, box-shadow 0.3s;
+    width: 90%; /* Ajuste para ocupar 90% da largura da tela */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
 }
 
 .profile-pic {
@@ -137,6 +139,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
 }
 
 .btn:hover {
@@ -225,7 +228,7 @@ p {
 @media (max-width: 600px) {
     .container {
         padding: 20px;
-        max-width: 90%;
+        width: 95%; /* Aumenta a largura em telas menores */
     }
 
     .profile-pic {
